@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #0a364c;
-  color: white
+  color: white;
 }
 
 /* buttons size for all */
@@ -36,6 +36,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 30%;
 }
 
 .erasers {
@@ -43,7 +44,7 @@ button:hover {
     gap: 10px;
 }
 
-.clear, .delete {
+#clear, #delete {
     flex: 1;
     padding: 15px 20px;
     font-size: 12px;
@@ -64,20 +65,22 @@ button:hover {
 .screen{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     padding: 20px;
-    gap: 15px;
     padding-bottom: 10px;
     font-size: 30px;
     background: #4E4e4e;
     border-radius: 10px;
     height: 60px;
+    flex-wrap: wrap;
 }
 #backScreen {
     font-size: 16px;
+    flex: 1;
 }
 
 #mainScreen {
     font-size: 24px;
+    flex:1;
 }

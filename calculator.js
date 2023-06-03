@@ -16,6 +16,7 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
+    if(b == 0) return "you have no friends"
     return a / b
 }
 
@@ -47,7 +48,8 @@ numBut.forEach(button => button.addEventListener('click', event => {
 
 opBut.forEach(button => button.addEventListener('click', event => {
     operator = event.target.innerHTML;
-    mainScreen.innerHTML += operator;
+    backScreen.innerHTML = mainScreen.innerHTML + " " + operator;
+    mainScreen.innerHTML = ""
     isNum1 = false;
     
 
@@ -56,6 +58,27 @@ opBut.forEach(button => button.addEventListener('click', event => {
 equalBut.addEventListener('click', event => {
     mainScreen.innerHTML = operate(operator, Number(num1), Number(num2))
     num1 = mainScreen.innerHTML
-    backScreen.innerHTML = Number(num1)
+    backScreen.innerHTML = ''
     num2 = ""
 } )
+
+
+const clear = document.getElementById('clear')
+const remove = document.getElementById('delete')
+
+
+clear.addEventListener('click', event => {
+    num1 = "";
+    operator = '';
+    num2 = "";
+    isNum1 = true;
+    mainScreen.innerHTML = ''
+    backScreen.innerHTML = ''
+})
+
+
+remove.addEventListener('click', event => {
+    let newNum = mainScreen.innerHTML.slice(0, mainScreen.innerHTML.length - 1)
+   mainScreen.innerHTML = newNum;
+   num1 = newNum;
+})
