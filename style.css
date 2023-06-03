@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a364c;
+  color: white
+}
+
+/* buttons size for all */
+button {
+    padding: 32px;
+    width: 100%;
+    font-size: 16px;
+    border-color: transparent;
+}
+
+button:hover {
+    background:#c5a595;
+    transform: scale(.95);
+}
+
+.box button {
+    font-size: 16px;
+    padding: 17px 25px;
+    border-radius: 5px;
+}
+
+
+
+.container {
+    padding: 15px;
+    border: 2px solid  #134f6d;
+    border-radius: 10px;
+    background: #236b8e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.erasers {
+    display: flex;
+    gap: 10px;
+}
+
+.clear, .delete {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.numNope {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    gap: 5px;
+}
+
+.screen{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    gap: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background: #4E4e4e;
+    border-radius: 10px;
+    height: 60px;
+}
+#backScreen {
+    font-size: 16px;
+}
+
+#mainScreen {
+    font-size: 24px;
+}
