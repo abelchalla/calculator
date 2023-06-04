@@ -96,13 +96,10 @@ decBut.addEventListener('click', event => {
         }
         if(isNum1){
             num1 += event.target.innerHTML;
-            console.log(num1 + " Hi Im num1")
             mainScreen.innerHTML += event.target.innerHTML
         }
         else {
             mainScreen.innerHTML += event.target.innerHTML
-            num2 += event.target.innerHTML;
-            console.log(num2 + " Hi Im num2")
         }
     }
     isDecimal = true;
