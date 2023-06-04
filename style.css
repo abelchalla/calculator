@@ -82,7 +82,8 @@ button:hover {
     border-radius: 10px;
     height: 60px;
     flex-wrap: wrap;
-    overflow: scroll;
+    overflow: auto;
+    box-shadow: 1px 1px;
 }
 #backScreen {
     font-size: 16px;
