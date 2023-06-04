@@ -36,7 +36,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 30%;
+    max-width: 264px;
 }
 
 .erasers {
@@ -74,13 +74,12 @@ button:hover {
     border-radius: 10px;
     height: 60px;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 #backScreen {
     font-size: 16px;
-    flex: 1;
 }
 
 #mainScreen {
     font-size: 24px;
-    flex:1;
 }
