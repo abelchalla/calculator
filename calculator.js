@@ -7,20 +7,20 @@ let isOperator = false
 let isDecimal = false
 
 function add(a, b) {
-    return a + b
+    return Math.round((a + b) * 100) / 100;
 }
 
 function subtract(a, b) {
-    return a - b
+    return Math.round((a - b) * 100) / 100;
 }
 
 function multiply(a, b) {
-    return a * b
+    return Math.round((a * b) * 100) / 100;
 }
 
 function divide(a, b) {
     if(b == 0) return "Siri: 'you have no friends'"
-    return a / b
+    return Math.round((a / b) * 100) / 100;
 }
 
 function operate(operator, num1 , num2) {
@@ -46,13 +46,11 @@ numBut.forEach(button => button.addEventListener('click', event => {
     }
     if(isNum1){
         num1 += event.target.innerHTML;
-        console.log(num1 + " Hi Im num1")
         mainScreen.innerHTML += event.target.innerHTML
     }
     else {
         mainScreen.innerHTML += event.target.innerHTML
         num2 += event.target.innerHTML;
-        console.log(num2 + " Hi Im num2")
     }
 }))
 
@@ -76,10 +74,8 @@ opBut.forEach(button => button.addEventListener('click', event => {
 
 equalBut.addEventListener('click', event => {
     if(mainScreen.innerHTML != '' && num2 != '' ){
-        console.log(operator, num1 , num2)
         mainScreen.innerHTML = operate(operator, Number(num1), Number(num2))
         num1 = mainScreen.innerHTML
-        console.log(num1)
         backScreen.innerHTML = ''
         num2 = ""
         isNum1 = true;
