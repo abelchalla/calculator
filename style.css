@@ -3,7 +3,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #0a364c;
+  /*background-color: #0a364c;*/
+  background-color: rgb(42, 41, 41);
   color: white;
 }
 
@@ -21,9 +22,13 @@ button:hover {
 }
 
 .box button {
-    font-size: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
     padding: 17px 25px;
     border-radius: 5px;
+    flex-grow: 1;
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 
@@ -49,6 +54,7 @@ button:hover {
     padding: 15px 20px;
     font-size: 12px;
     border-radius: 10px;
+    font-family: Karla, Arial, Helvetica, sans-serif;
 }
 
 .numNope {
@@ -59,6 +65,8 @@ button:hover {
 
 .box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 
@@ -82,4 +90,8 @@ button:hover {
 
 #mainScreen {
     font-size: 24px;
+}
+
+#dec{
+    padding-right: 29px;
 }
