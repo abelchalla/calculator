@@ -20,6 +20,7 @@ function multiply(a, b) {
 
 function divide(a, b) {
     if(b == 0) return "Siri: 'you have no friends'"
+    if(a / b < .01) return a / b;
     return Math.round((a / b) * 100) / 100;
 }
 
