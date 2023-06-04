@@ -41,7 +41,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 264px;
+    max-width: 260px;
 }
 
 .erasers {
